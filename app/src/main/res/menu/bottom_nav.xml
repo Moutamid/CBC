@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/round_home_24"
+        android:title="Demarrer" />
+    <item
+        android:id="@+id/cbc"
+        android:title="Ma CBC"
+        android:icon="@drawable/round_format_list_bulleted_24"/>
+    <item
+        android:id="@+id/placements"
+        android:title="Placements"
+        android:icon="@drawable/bank" />
+    <item
+        android:id="@+id/profesional"
+        android:title="Professionel"
+        android:icon="@drawable/briefcase"/>
+    <item
+        android:id="@+id/offer"
+        android:title="Offre"
+        android:icon="@drawable/layers"/>
+</menu>
