@@ -160,6 +160,14 @@
             android:drawableEnd="@drawable/magnifying_glass_solid"
             android:drawableTint="@color/skyBlue1" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Novembre 2023"
+            android:textSize="14sp"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/text" />
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rc"
             android:layout_width="match_parent"

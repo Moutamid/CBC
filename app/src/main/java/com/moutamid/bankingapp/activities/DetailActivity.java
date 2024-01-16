@@ -37,11 +37,11 @@ public class DetailActivity extends AppCompatActivity {
 
     private void getList() {
         list = new ArrayList<>();
-        list.add(new TransactionModel(R.drawable.sinusoid,"Vakele Nsingui-Guza J & J", "12,36", "-2500 EURO"));
-        list.add(new TransactionModel(R.drawable.bank,"Vakele Nsingui-Guza J & J", "327,97", "500 EURO"));
-        list.add(new TransactionModel(R.drawable.mail_inbox_app,"Vakele Nsingui-Guza J & J", "0,77", "-25,00 EURO"));
-        list.add(new TransactionModel(R.drawable.mail_inbox_app,"Vakele Nsingui-Guza J & J", "0,99", "-5,60 EURO"));
-        list.add(new TransactionModel(R.drawable.mail_inbox_app,"Vakele Nsingui-Guza J & J", "0,00", "60,25"));
+        list.add(new TransactionModel(R.drawable.sinusoid,"Vakele Nsingui-Guza J & J", "Samedi 18 novembre à 10.05 heures \nVirement instantané", "-350,00 EUR", "10.05", "Vakele Nsingui-Guza J & J", "RUE DE LA CONCORDE 48 7100 LA LOUVIERE", "BE05 7320  5543 7975 \nBIC: CREGBEBBXXX", "18 novembre 2023", "18 novembre 2023"));
+        list.add(new TransactionModel(R.drawable.bank,"Vakele Nsingui-Guza J & J", "Samedi 18 novembre à 10.05 heures \nVirement instantané", "-65,30 EUR", "10.05", "Vakele Nsingui-Guza J & J", "RUE DE LA CONCORDE 48 7100 LA LOUVIERE", "BE05 7320  5543 7975 \nBIC: CREGBEBBXXX", "18 novembre 2023", "18 novembre 2023"));
+        list.add(new TransactionModel(R.drawable.money,"Vakele Nsingui JONAS", "Samedi 18 novembre à 10.05 heures \nVirement instantané", "450,00 EUR", "10.05", "Vakele Nsingui JONAS \nVirement instantané", "RUE DE LA CONCORDE 48 7100 LA LOUVIERE", "BE05 7320  5543 7975 \nBIC: CREGBEBBXXX", "18 novembre 2023", "18 novembre 2023"));
+        list.add(new TransactionModel(R.drawable.mail_inbox_app,"Vakele Nsingui-Guza J & J", "Samedi 18 novembre à 10.05 heures \nVirement instantané", "25,00 EUR", "10.05", "Vakele Nsingui-Guza J & J", "RUE DE LA CONCORDE 48 7100 LA LOUVIERE", "BE05 7320  5543 7975 \nBIC: CREGBEBBXXX", "18 novembre 2023", "18 novembre 2023"));
+        list.add(new TransactionModel(R.drawable.atm_card,"Vakele Nsingui-Guza J & J", "Samedi 18 novembre à 10.05 heures \nVirement instantané", "-205,00 EUR", "10.05", "Vakele Nsingui-Guza J & J", "RUE DE LA CONCORDE 48 7100 LA LOUVIERE", "BE05 7320  5543 7975 \nBIC: CREGBEBBXXX", "18 novembre 2023", "18 novembre 2023"));
         binding.rc.setLayoutManager(new LinearLayoutManager(this));
         TransactionAdapter adapter = new TransactionAdapter(this, list);
         binding.rc.setAdapter(adapter);

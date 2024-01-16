@@ -25,6 +25,21 @@ public class BottomSheet extends BottomSheetDialogFragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         binding = BottomsheetBinding.inflate(getLayoutInflater(),container, false);
 
+        binding.top.setText(model.top);
+        binding.bottom.setText(model.bottom);
+
+        binding.icon.setImageResource(model.icon);
+
+        String[] money = model.money.split(",");
+        binding.beforeDec.setText(money[0]);
+        binding.afterDec.setText("," + money[1]);
+
+        binding.dateOp.setText(model.dateOpe);
+        binding.dateVal.setText(model.dateVal);
+        binding.heure.setText(model.heure);
+        binding.detailOper.setText(model.detailOpr);
+        binding.addrese.setText(model.adresse);
+        binding.numero.setText(model.numero);
 
 
         return binding.getRoot();
